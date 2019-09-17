@@ -1,0 +1,1 @@
+{"version":3,"sources":["defaults.browser.js"],"names":["pool","size","navigator","hardwareConcurrency"],"mappings":";;;AAAA;;kBAEe;AACbA,QAAO;AACLC,UAAOC,UAAUC,mBAAV,IAAiC;AADnC;AADM,C","file":"defaults.browser.js","sourcesContent":["/*eslint-env browser*/\r\n\r\nexport default {\r\n  pool : {\r\n    size : navigator.hardwareConcurrency || 8\r\n  }\r\n};\r\n"]}
