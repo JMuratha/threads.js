@@ -106,10 +106,7 @@ export default class Worker extends EventEmitter {
 
   handleMessage(message) {
     if (message.error) {
-      const error = new Error(message.error.message);
-      error.stack = message.error.stack;
-
-      this.handleError(error);
+      this.handleError(message.error);
     } else if (message.progress) {
       this.handleProgress(message.progress);
     } else {
