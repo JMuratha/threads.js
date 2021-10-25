@@ -49,7 +49,7 @@ function messageHandlerProgress(progress) {
 
 function messageHandlerError(error) {
   process.send({
-    error : { message : error.message, stack : error.stack }
+    error : error
   });
 }
 
